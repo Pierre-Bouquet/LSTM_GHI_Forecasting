@@ -7,7 +7,7 @@ AI-Based Forecasting for Optimized Solar Energy Management and Smart Grid Effici
 
 GHI data in .csv measured on DESL laboratory roof from 2016 to 2021 with a sampling frequency of 10s. Contains Nans and outliers
 
-## GHI Clean Sampled
+### GHI Clean Sampled
 
 Preprocessing jupyter notebook and GHI data in .csv.
 
