@@ -5,11 +5,13 @@ AI-Based Forecasting for Optimized Solar Energy Management and Smart Grid Effici
 This repository contains the data and code used to generate the results in the paper:
 _AI-Based Forecasting for Optimized Solar Energy Management and Smart Grid Efficiency_ [1]
 
-## Authors
-By: Pierre Bouquet, Ilya Jackson, Mostafa Nick, Amin Kaboli
+By Pierre Bouquet, Ilya Jackson, Mostafa Nick, Amin Kaboli
+
+The raw data is provided by the DESL laboratory at the Swiss Federal Institute of Technology (EPFL).
+The code is provided by Pierre Bouquet.
 
 ## Description
-The LSTM_GHI_Forecasting repository contains the code and data for forecasting Global Horizontal Irradiance (GHI) using LSTM models. The raw GHI data was provided by the DESL laboratory at the Swiss Federal Institute of Technology (EPFL).
+The LSTM_GHI_Forecasting repository contains the code and data for forecasting Global Horizontal Irradiance (GHI) using LSTM models.
 
 ## Folder Structure
 - `.\GHI_dataset\` - Contains all the data
