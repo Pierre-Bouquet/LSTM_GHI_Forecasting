@@ -23,11 +23,13 @@ The LSTM_GHI_Forecasting repository contains the code and data for forecasting G
     - `persistence_model.ipynb` - Implementation of the persistence model.
     - `LSTM_feature_grid_search.py` - Feature grid search algorithm detailed in the paper.
 
-- `.\reports` - Contains the performance from the models
+- `.\reports\` - Contains the performance reports from the models
     - `persistence_model` - Performance report of the persistence model.
-    - `LSTM_model`
-        - `run_file_[...]` - Detailed performance of the LSTM model with a set of parameters.
+    - `\LSTM_model\HORIZON_\` - Performance reports of the LSTM models for each forecasting horizon.
+        - `run_file_HORIZON_FEATURES_POLYNOMIAL_HISTORY.csv` - Detailed performance of the LSTM model for each set of parameters.
         - `summary_file_HORIZON` - Summary of the performance of the LSTM model for each horizon.
+
+- `.\requirements` - Contains mac OS environments associated to each piece of code.
 
 ## Dataset Description
 
@@ -37,14 +39,14 @@ GHI data in .csv measured on DESL laboratory roof from 2016 to 2021 with a sampl
 ### GHI Cleaned and Sampled Data
 Obtained from running preprocessing.ipynb on GHI raw data.
 Output .csv with the following pre-processing performed:
- - Removed NaNs.
- - Removed outliers.
- - Added GHIcs.
- - Removed night measurements.
- - Added Clear Sky index.
- - Added backward finite difference.
- - Added seasonality.
- - Downsampled from 15 minutes to 7 days.
+1. Removed NaNs.
+2. Removed outliers.
+3. Added GHIcs.
+4. Removed night measurements.
+5. Added Clear Sky index.
+6. Added backward finite difference.
+7. Added seasonality.
+8. Downsampled from 15 minutes to 7 days.
 
 ## References
 

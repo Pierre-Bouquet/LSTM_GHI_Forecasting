@@ -1,4 +1,4 @@
-name: pv-env
+name: LSTM_GHI_preprocessing_pipeline
 channels:
   - anaconda
   - conda-forge
