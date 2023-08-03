@@ -1,4 +1,4 @@
-name: LSTM_GHI_preprocessing_pipeline
+name: LSTM_GHI_preprocessing_pipeline_env
 channels:
   - anaconda
   - conda-forge

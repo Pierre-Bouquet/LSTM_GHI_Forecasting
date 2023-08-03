@@ -2,10 +2,6 @@ import os
 import pandas as pd
 import numpy as np 
 
-from tensorflow.keras import mixed_precision
-policy = mixed_precision.Policy('mixed_float16')
-mixed_precision.set_global_policy(policy)
-
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures, MinMaxScaler
 from sklearn.metrics import mean_absolute_percentage_error, mean_squared_error, mean_absolute_error, r2_score
@@ -13,7 +9,6 @@ from tensorflow import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, LSTM
 from tensorflow.keras.callbacks import EarlyStopping
-
 
 def median_error(y_ref, y_test):
     """
@@ -196,7 +191,9 @@ nbEpoch = 50
 nPrevSteps_list = [5, 10, 15, 20, 25]
 polynomialAugm_list = [1, 2, 3, 4, 5]
 
-samplingFrequencies_eng = ["7_days", "6_days", "5_days", "4_days", "72_hours", "48_hours", "24_hours", "12_hours", "6_hours", "4_hours"]
+samplingFrequencies_eng = ["7_days", "6_days", "5_days", "4_days", "72_hours", 
+                           "48_hours", "24_hours", "12_hours", "6_hours", "4_hours",
+                           "2_hours", "1_hour", "45_minutes", "30_minutes", "15_minutes"]
 
 basicFeatures = ['GHI', 'GHIcs', 'k']
 seasonalFeatures = ['month', 'day', 'hour']
@@ -217,7 +214,7 @@ featureColumns_eng_list = ['GHI', 'GHI_d1', 'GHI_d1_d2', 'GHI_d1_d2_d3',
                            'GHI_season', 'GHI_season_d1', 'GHI_season_d1_d2', 'GHI_season_d1_d2_d3']
 
 # Set data directory
-data_dir = './data_cleaned_sampled/' 
+data_dir = './GHI_dataset/cleaned_sampled_data/'
 
 # Set report directory
 reportLSTM_dir = './reports/LSTM_models/'
@@ -225,7 +222,6 @@ reportLSTM_dir = './reports/LSTM_models/'
 # Loop through different sampling frequencies
 for samplingFrequency in samplingFrequencies_eng:
 
-    print(samplingFrequency)
     # Create dataframe to store summary results
     lstmSummaryResult_df = pd.DataFrame(columns = [
     'samplingFrequency', 'polynomialAugmentation', 'features', 'history', 
