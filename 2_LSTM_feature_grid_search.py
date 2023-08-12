@@ -246,7 +246,7 @@ for samplingFrequency in samplingFrequencies_eng:
         print(f"File not found: {file_path}")
     
     # Set batch size based on RAM
-    batch_size = min(5000, int(data_df.shape[0]))
+    batch_size = min(256, int(data_df.shape[0]))
     
     # Loop through different feature sets
     for k, featureColumns in enumerate(featureColumns_list):
