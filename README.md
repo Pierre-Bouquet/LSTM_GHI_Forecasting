@@ -48,6 +48,9 @@ Output .csv with the following pre-processing performed:
 7. Added seasonality.
 8. Downsampled from 15 minutes to 7 days.
 
+## Licence 
+This code and data are released under the Creative Commons Attribution-NonCommercial-NoDerivs (CC-BY-NC-ND) license.
+Please contact pierre.bouquet.ch(at)gmail.com for commercial uses.
 ## References
 
 [1] Bouquet, P., Jackson, I., Nick, M., & Amin Kaboli. (2023). AI-based forecasting for optimised solar energy management and smart grid efficiency. *International Journal of Production Research*, 1–22. [https://doi.org/10.1080/00207543.2023.2269565](https://doi.org/10.1080/00207543.2023.2269565) 
