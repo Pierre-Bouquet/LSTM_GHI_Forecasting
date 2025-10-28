@@ -3,7 +3,7 @@ AI-Based Forecasting for Optimized Solar Energy Management and Smart Grid Effici
 
 ## Links
 
-[[Paper](https://doi.org/10.1080/00207543.2023.2269565)] - [[GitHub](https://github.com/Pierre-Bouquet/LSTM_GHI_Forecasting)] - [[Contact - PB](https://www.linkedin.com/in/pierre-bouquet/)]
+[[Paper](https://doi.org/10.1080/00207543.2023.2269565)] [[GitHub](https://github.com/Pierre-Bouquet/LSTM_GHI_Forecasting)] [[Contact - PB](https://www.linkedin.com/in/pierre-bouquet/)]
 
 ## Citation
 This repository contains the data and code used to generate the results in the paper:
